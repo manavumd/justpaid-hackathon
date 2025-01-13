@@ -360,7 +360,7 @@ const SearchResultsPage = () => {
               handleFilterChange("radius", newValue)
             }
             min={1}
-            max={2000}
+            max={500}
           />
         </Box>
       </Drawer>
