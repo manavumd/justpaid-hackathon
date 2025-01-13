@@ -113,7 +113,7 @@ const SearchLandingPage = () => {
               value={radius}
               onChange={(e, newValue) => setRadius(newValue)}
               min={1}
-              max={100}
+              max={2000}
               valueLabelDisplay="auto"
             />
           </Box>
