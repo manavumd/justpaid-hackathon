@@ -17,6 +17,7 @@ from decouple import config
 # Load the Gemini API Key
 GEMINI_API_KEY = config('GEMINI_API_KEY')
 GOOGLE_MAPS_API_KEY = config('GOOGLE_MAPS_API_KEY')
+POSTGRES_PASSWORD = config('POSTGRES_PASSWORD')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -106,7 +107,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'justpaid_db',
         'USER': 'postgres',
-        'PASSWORD': 'manav123',
+        'PASSWORD': POSTGRES_PASSWORD,
         'HOST': 'localhost',
         'PORT': '5432',
     }
